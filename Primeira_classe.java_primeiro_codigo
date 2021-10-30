@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class Primeira_classe {
+
+	public static void main(String[] args) {
+		
+Scanner sn = new Scanner(System.in);
+System.out.print("Digite a sua nota da prova: ");
+int notaprova = sn.nextInt();
+System.out.print("Digite a nota do seu projeto: ");
+int notaprojeto = sn.nextInt();
+System.out.print("Digite a sua nota da lista de exercício: ");
+int notaexercicio = sn.nextInt();
+System.out.print("Digite a sua nota de contribuição em projetos de software livre/ conclusão de MOOCs recomendados pelo docente: ");
+int notacontribuicao = sn.nextInt();
+int resultadooperacaologica = (notaprova + notaprojeto + notaexercicio + notacontribuicao)/4;
+
+if (resultadooperacaologica >= 8) {
+System.out.print("Sua média é "  + resultadooperacaologica + " , Parabéns você foi aprovado!");
+} 
+else {
+System.out.print("Sua média é "  + resultadooperacaologica + " , Você foi reprovado e precisa de  " + (10 -resultadooperacaologica) + " para passar.");
+	
+}
+	}
+}
